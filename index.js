@@ -67,6 +67,7 @@ app.get('/api/v1/coursequery', (req, res) => {
 
 app.post('/api/v1/courseuplode', (req, res) => {
     console.log(req.headers)
+     
     const file = req.files.file
     let path = __dirname + "/images/" + new Date() + ".jpg"
 
